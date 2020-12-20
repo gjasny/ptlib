@@ -512,7 +512,7 @@ class PSoundChannel : public PChannel
        @return
        true if there were no errors.
     */
-    virtual bool SetMute(
+    virtual PBoolean SetMute(
       bool mute   ///< New mute state
     );
 
@@ -521,7 +521,7 @@ class PSoundChannel : public PChannel
        @return
        true if there were no errors.
     */
-    virtual bool GetMute(
+    virtual PBoolean GetMute(
       bool & mute   ///< Variable to receive mute state.
     );
 

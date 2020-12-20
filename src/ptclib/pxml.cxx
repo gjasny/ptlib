@@ -994,7 +994,7 @@ void PXML_HTTP::AutoReloadThread(PThread &, INT)
 }
 
 
-void PXML_HTTP::OnAutoLoad(bool PTRACE_PARAM(ok))
+void PXML_HTTP::OnAutoLoad(PBoolean PTRACE_PARAM(ok))
 {
   PTRACE_IF(3, !ok, "XML\tFailed to load XML: " << GetErrorString());
 }

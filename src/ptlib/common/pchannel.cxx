@@ -848,7 +848,7 @@ bool PIndirectChannel::SetReadChannel(PChannel * channel, bool autoDelete, bool 
 }
 
 
-bool PIndirectChannel::SetWriteChannel(PChannel * channel, bool autoDelete, bool closeExisting)
+PBoolean PIndirectChannel::SetWriteChannel(PChannel * channel, bool autoDelete, bool closeExisting)
 {
   PWriteWaitAndSignal mutex(channelPointerMutex);
 
